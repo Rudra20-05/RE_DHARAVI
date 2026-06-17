@@ -1,0 +1,124 @@
+/* ============================================================
+   RE: DHARAVI — Global Styles
+   Google Fonts, resets, scroll behaviour, accessibility.
+   ============================================================ */
+
+/* ── Google Fonts ────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;600;700&family=Barlow:ital,wght@0,400;0,500;0,600;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital@1&family=Special+Elite&display=swap');
+
+/* ── Import tokens ──────────────────────────────────────── */
+@import './tokens.css';
+
+/* ── Tailwind Layers ─────────────────────────────────────── */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Base Resets ─────────────────────────────────────────── */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    line-height: 1.7;
+    color: var(--charcoal);
+    background-color: var(--off-white);
+    overflow-x: hidden;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* ── Focus Ring Override ─────────────────────────────── */
+  *:focus-visible {
+    outline: 2px solid var(--red-primary);
+    outline-offset: 3px;
+  }
+
+  /* Remove default focus ring */
+  *:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  /* ── Selection Colour ───────────────────────────────── */
+  ::selection {
+    background-color: var(--red-primary);
+    color: white;
+  }
+}
+
+/* ── Utility Classes ─────────────────────────────────────── */
+@layer components {
+  .editorial-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding-left: var(--gutter-desktop);
+    padding-right: var(--gutter-desktop);
+    gap: 0 24px;
+  }
+
+  @media (max-width: 767px) {
+    .editorial-grid {
+      padding-left: var(--gutter-mobile);
+      padding-right: var(--gutter-mobile);
+      gap: 0 16px;
+    }
+  }
+
+  .label-tag {
+    font-family: var(--font-ui);
+    font-weight: 500;
+    font-size: var(--fs-caption);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--orange-accent);
+  }
+
+  .ghost-number {
+    font-family: var(--font-display);
+    font-size: var(--fs-callout);
+    color: var(--red-primary);
+    opacity: 0.09;
+    position: absolute;
+    z-index: 0;
+    pointer-events: none;
+    line-height: 0.85;
+    user-select: none;
+  }
+
+  /* ── Horizontal scroll container for mobile ─────────── */
+  .scroll-snap-x {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .scroll-snap-x::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scroll-snap-x > * {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+  }
+}
