@@ -4,10 +4,10 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const NAV_LINKS = [
-  { label: 'Cover', href: '#cover' },
+  { label: 'Home', href: '#cover' },
   { label: 'Story', href: '#story' },
   { label: 'Makeover', href: '#makeover' },
-  { label: 'Alternative', href: '#alternative' },
+  { label: 'Naya Dharavi', href: '#naya-dharavi' },
   { label: 'About', href: '#about' },
 ];
 
@@ -59,7 +59,7 @@ export default function Navbar() {
           href="#cover"
           onClick={(e) => handleNavClick(e, '#cover')}
           className="flex items-baseline gap-1 no-underline"
-          aria-label="RE: Dharavi — Back to top"
+          aria-label="RE: Dharavi - Back to top"
         >
           <span
             className="font-heading font-bold text-sm tracking-extra-wide uppercase"

@@ -14,7 +14,7 @@ export default function HeroSection() {
         backgroundColor: 'var(--red-primary)',
       }}
     >
-      {/* Layer 1: Crimson background — fades in */}
+      {/* Layer 1: Crimson background - fades in */}
       <motion.div
         className="absolute inset-0"
         style={{ backgroundColor: 'var(--red-primary)' }}
@@ -60,7 +60,7 @@ export default function HeroSection() {
           RE:
         </motion.span>
 
-        {/* "DHARAVI" — clip-path reveal */}
+        {/* "DHARAVI" - clip-path reveal */}
         <div className="overflow-hidden mt-2">
           <motion.h1
             className="font-display text-white leading-none m-0 p-0"
@@ -103,7 +103,7 @@ export default function HeroSection() {
           animate={{ opacity: 0.6 }}
           transition={{ duration: 0.5, delay: 1.7 }}
         >
-          2010 — SPARC × KRVIA
+          2010 - SPARC × KRVIA
         </motion.p>
       </div>
 

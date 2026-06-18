@@ -8,7 +8,7 @@ const ZONES = [
     id: 'zone-a',
     name: 'Pottery',
     fill: '#D4620A',
-    tooltip: 'Kumbharwada — Pottery District, est. population 5,000',
+    tooltip: 'Kumbharwada - Pottery District, est. population 5,000',
     points: '80,60 230,60 230,200 80,200',
     labelX: 155,
     labelY: 135,
@@ -17,7 +17,7 @@ const ZONES = [
     id: 'zone-b',
     name: 'Leather',
     fill: '#8C6D3F',
-    tooltip: 'Dharavi Main Road — Leather tanneries & export units',
+    tooltip: 'Dharavi Main Road - Leather tanneries & export units',
     points: '250,60 420,60 420,200 250,200',
     labelX: 335,
     labelY: 135,
@@ -26,7 +26,7 @@ const ZONES = [
     id: 'zone-c',
     name: 'Recycling',
     fill: '#3A7D44',
-    tooltip: '13th Compound — Recycling hub processing 80% of Mumbai\'s plastic waste',
+    tooltip: '13th Compound - Recycling hub processing 80% of Mumbai\'s plastic waste',
     points: '440,60 620,60 620,200 440,200',
     labelX: 530,
     labelY: 135,
@@ -35,7 +35,7 @@ const ZONES = [
     id: 'zone-d',
     name: 'Textiles',
     fill: '#4A6FA5',
-    tooltip: 'Koliwada — Garment workshops, 5,000+ units',
+    tooltip: 'Koliwada - Garment workshops, 5,000+ units',
     points: '80,230 280,230 280,380 80,380',
     labelX: 180,
     labelY: 310,
@@ -44,7 +44,7 @@ const ZONES = [
     id: 'zone-e',
     name: 'Food',
     fill: '#9B5DE5',
-    tooltip: '90 Feet Road — Food processing and bakeries',
+    tooltip: '90 Feet Road - Food processing and bakeries',
     points: '300,230 500,230 500,380 300,380',
     labelX: 400,
     labelY: 310,
@@ -53,7 +53,7 @@ const ZONES = [
     id: 'zone-f',
     name: 'Mixed Residential',
     fill: '#B31B1B',
-    tooltip: 'Transit Camp — Mixed residential, highest density',
+    tooltip: 'Transit Camp - Mixed residential, highest density',
     points: '520,230 740,230 740,380 520,380',
     labelX: 630,
     labelY: 310,
@@ -95,7 +95,7 @@ export default function MapPanel() {
             className="font-display text-white m-0 leading-none"
             style={{ fontSize: 'clamp(36px, 5vw, 56px)' }}
           >
-            Sector IV — A Neighbourhood Mapped
+            Sector IV - A Neighbourhood Mapped
           </h2>
           <p
             className="font-ui mt-4"
@@ -178,7 +178,7 @@ export default function MapPanel() {
                   onBlur={() => setActiveZone(null)}
                   tabIndex={0}
                   role="button"
-                  aria-label={`${zone.name} zone — ${zone.tooltip}`}
+                  aria-label={`${zone.name} zone - ${zone.tooltip}`}
                   style={{ outline: 'none' }}
                 />
 
@@ -240,7 +240,7 @@ export default function MapPanel() {
               fontFamily="Barlow, sans-serif"
               letterSpacing="0.15em"
             >
-              DHARAVI SECTOR IV — LAND USE MAP
+              DHARAVI SECTOR IV - LAND USE MAP
             </text>
           </svg>
 
@@ -249,7 +249,7 @@ export default function MapPanel() {
             <div
               className="absolute pointer-events-none z-20"
               style={{
-                left: `${Math.min(mousePos.x, 600)}px`,
+                left: `${mousePos.x}px`,
                 top: `${mousePos.y - 50}px`,
                 backgroundColor: 'var(--charcoal)',
                 color: 'white',

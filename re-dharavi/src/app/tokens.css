@@ -1,7 +1,7 @@
 /* ============================================================
-   RE: DHARAVI — Design Tokens
+   RE: DHARAVI - Design Tokens
    All colour, typography, and layout variables.
-   Never hardcode hex values in components — always use var().
+   Never hardcode hex values in components - always use var().
    ============================================================ */
 
 :root {

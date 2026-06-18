@@ -14,7 +14,7 @@ export default function SectionDivider({ partNumber, title, description, imageSr
       className="relative w-full overflow-hidden"
       style={{ height: '80vh', minHeight: '500px' }}
     >
-      {/* Crimson background — clip-path flood from left */}
+      {/* Crimson background - clip-path flood from left */}
       <motion.div
         className="absolute inset-0"
         style={{
@@ -77,7 +77,7 @@ export default function SectionDivider({ partNumber, title, description, imageSr
           <motion.p
             className="font-body mt-6"
             style={{
-              fontSize: '16px',
+              fontSize: '28px',
               fontStyle: 'italic',
               color: 'rgba(255, 255, 255, 0.75)',
               maxWidth: '500px',

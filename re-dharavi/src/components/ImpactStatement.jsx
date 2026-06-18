@@ -72,7 +72,7 @@ export default function ImpactStatement() {
           animate={isInView ? { opacity: 1 } : {}}
           transition={{ delay: 1.3, duration: 0.5 }}
         >
-          — RE: Dharavi, SPARC × KRVIA, 2010
+          - RE: Dharavi, SPARC × KRVIA, 2010
         </motion.p>
       </div>
     </section>

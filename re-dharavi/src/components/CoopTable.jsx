@@ -53,7 +53,7 @@ export default function CoopTable() {
               }}
             >
               Dharavi&apos;s informal economy is structured through a dense network of
-              cooperative societies, nagars, and chawls — each functioning as a
+              cooperative societies, nagars, and chawls - each functioning as a
               micro-neighbourhood with its own governance.
             </p>
           </motion.div>

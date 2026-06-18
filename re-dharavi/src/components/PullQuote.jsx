@@ -28,7 +28,7 @@ export default function PullQuote({ quote, attribution }) {
             letterSpacing: '0.08em',
           }}
         >
-          — {attribution}
+          - {attribution}
         </footer>
       )}
     </blockquote>

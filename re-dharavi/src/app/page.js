@@ -7,8 +7,8 @@ import EditorialRow from '@/components/EditorialRow';
 import LineChartPanel from '@/components/LineChartPanel';
 import ClippingTimeline from '@/components/ClippingTimeline';
 import MapPanel from '@/components/MapPanel';
-import ImpactStatement from '@/components/ImpactStatement';
 import CoopTable from '@/components/CoopTable';
+import NayaDharaviSection from '@/components/NayaDharaviSection';
 import AboutSection from '@/components/AboutSection';
 
 export default function Home() {
@@ -20,18 +20,18 @@ export default function Home() {
       {/* 1. Hero Section */}
       <HeroSection />
 
-      {/* 2. Section Divider — Part 01 */}
+      {/* 2. Section Divider - Part 01 */}
       <div id="story">
         <SectionDivider
           partNumber="01"
           title="The Dharavi Story"
-          description="A million lives, a thousand trades, one contested patch of earth in the heart of Mumbai."
+          description="A million lives. A thousand trades. One fiercely contested square mile holding the soul of Mumbai."
           imageSrc="/images/dharavi-street.png"
           imageAlt="Black and white documentary photograph of a busy narrow street in Dharavi, Mumbai, showing workers and small shops"
         />
       </div>
 
-      {/* 3. Dharavi Story — Editorial Row */}
+      {/* 3. Dharavi Story - Editorial Row */}
       <EditorialRow
         ghostNumber="01"
         label="THE STORY"
@@ -44,10 +44,10 @@ export default function Home() {
         imageAlt="Black and white documentary photograph of workers in a pottery workshop in Dharavi, Mumbai"
       />
 
-      {/* 4. Data Panel — Land of High Returns */}
+      {/* 4. Data Panel - Land of High Returns */}
       <LineChartPanel />
 
-      {/* 5. Section Divider — Part 02 */}
+      {/* 5. Section Divider - Part 02 */}
       <div id="makeover">
         <SectionDivider
           partNumber="02"
@@ -65,12 +65,12 @@ export default function Home() {
         label="REDEVELOPMENT"
         heading="The ₹15,000 Crore Question"
         body="In 2004, the Maharashtra government announced the Dharavi Redevelopment Project, inviting global developers to bid on five sectors. The plan promised free housing for residents but failed to account for the 57 categories of livelihoods operating within the informal economy."
-        pullQuote="Redevelopment was never designed with residents — it was designed around them."
+        pullQuote="Redevelopment was never designed with residents - it was designed around them."
         statNumber="57"
         statLabel="distinct livelihood categories threatened"
         imageSrc="/images/dharavi-street.png"
         imageAlt="Documentary photograph showing Dharavi sector zones proposed for redevelopment"
-        imageCaption="Sector IV — Proposed Redevelopment Zones"
+        imageCaption="Sector IV - Proposed Redevelopment Zones"
       />
 
       {/* 7. Newspaper Clipping Timeline */}
@@ -79,24 +79,15 @@ export default function Home() {
       {/* 8. Sector IV Interactive Map */}
       <MapPanel />
 
-      {/* 9. Section Divider — Part 03 */}
-      <div id="alternative">
-        <SectionDivider
-          partNumber="03"
-          title="An Alternative Strategy"
-          description="What if development began with listening instead of demolishing?"
-          imageSrc="/images/dharavi-pottery.png"
-          imageAlt="Documentary photograph of artisans working in Dharavi, representing community-led alternative development"
-        />
-      </div>
-
-      {/* 10. Impact Statement */}
-      <ImpactStatement />
-
-      {/* 11. Cooperative Table */}
+      {/* 9. Community Structures Table */}
       <CoopTable />
 
-      {/* 12. About Section + Footer */}
+      {/* 10. Naya Dharavi - Community Platform */}
+      <div id="naya-dharavi">
+        <NayaDharaviSection />
+      </div>
+
+      {/* 11. About Section + Footer */}
       <AboutSection />
     </main>
   );

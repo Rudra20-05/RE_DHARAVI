@@ -128,12 +128,12 @@ export default function EditorialRow({
             reversed ? 'md:flex-row-reverse' : 'md:flex-row'
           }`}
         >
-          {/* Text column — 55% */}
+          {/* Text column - 55% */}
           <div className="w-full md:w-[55%] flex flex-col justify-center">
             {textContent}
           </div>
 
-          {/* Image column — 45% */}
+          {/* Image column - 45% */}
           <div className="w-full md:w-[45%]">
             {imageContent}
           </div>

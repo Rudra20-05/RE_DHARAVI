@@ -42,7 +42,7 @@ export default function NewsClipping({ date, headline, body, rotation = 0 }) {
       }}
       tabIndex={0}
       role="article"
-      aria-label={`${date} — ${headline}`}
+      aria-label={`${date} - ${headline}`}
     >
       {/* Date */}
       <span

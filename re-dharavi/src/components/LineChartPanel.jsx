@@ -124,8 +124,8 @@ export default function LineChartPanel() {
               lineHeight: 1.7,
             }}
           >
-            Between 2007 and 2010, Dharavi land values escalated dramatically despite — or
-            because of — the redevelopment proposals.
+            Between 2007 and 2010, Dharavi land values escalated dramatically despite - or
+            because of - the redevelopment proposals.
           </p>
         </motion.div>
 

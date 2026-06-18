@@ -3,6 +3,13 @@
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 
+const CREDITS = [
+  { label: 'Authors', value: 'Kalpana Sharma, Hussain Indorewala, Rupali Gupte, Prasad Shetty' },
+  { label: 'Publisher', value: 'SPARC, Mumbai' },
+  { label: 'Year', value: '2010' },
+  { label: 'Website by', value: 'Rudra Dalvi - Web Development Internship 2026' }
+];
+
 export default function AboutSection() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.2 });
@@ -57,98 +64,31 @@ export default function AboutSection() {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <div>
-                <span
-                  className="font-ui block uppercase mb-2"
-                  style={{
-                    fontSize: '11px',
-                    color: 'var(--orange-accent)',
-                    letterSpacing: '0.12em',
-                    fontWeight: 500,
-                  }}
-                >
-                  Authors
-                </span>
-                <p
-                  className="font-ui m-0"
-                  style={{
-                    fontSize: '13px',
-                    color: 'rgba(255, 255, 255, 0.6)',
-                    lineHeight: 1.6,
-                  }}
-                >
-                  Kalpana Sharma, Hussain Indorewala, Rupali Gupte, Prasad Shetty
-                </p>
-              </div>
-
-              <div>
-                <span
-                  className="font-ui block uppercase mb-2"
-                  style={{
-                    fontSize: '11px',
-                    color: 'var(--orange-accent)',
-                    letterSpacing: '0.12em',
-                    fontWeight: 500,
-                  }}
-                >
-                  Publisher
-                </span>
-                <p
-                  className="font-ui m-0"
-                  style={{
-                    fontSize: '13px',
-                    color: 'rgba(255, 255, 255, 0.6)',
-                  }}
-                >
-                  SPARC, Mumbai
-                </p>
-              </div>
-
-              <div>
-                <span
-                  className="font-ui block uppercase mb-2"
-                  style={{
-                    fontSize: '11px',
-                    color: 'var(--orange-accent)',
-                    letterSpacing: '0.12em',
-                    fontWeight: 500,
-                  }}
-                >
-                  Year
-                </span>
-                <p
-                  className="font-ui m-0"
-                  style={{
-                    fontSize: '13px',
-                    color: 'rgba(255, 255, 255, 0.6)',
-                  }}
-                >
-                  2010
-                </p>
-              </div>
-
-              <div>
-                <span
-                  className="font-ui block uppercase mb-2"
-                  style={{
-                    fontSize: '11px',
-                    color: 'var(--orange-accent)',
-                    letterSpacing: '0.12em',
-                    fontWeight: 500,
-                  }}
-                >
-                  Website by
-                </span>
-                <p
-                  className="font-ui m-0"
-                  style={{
-                    fontSize: '13px',
-                    color: 'rgba(255, 255, 255, 0.6)',
-                  }}
-                >
-                  Rudra Dalvi — Web Development Internship 2026
-                </p>
-              </div>
+              {CREDITS.map((credit, i) => (
+                <div key={i}>
+                  <span
+                    className="font-ui block uppercase mb-2"
+                    style={{
+                      fontSize: '11px',
+                      color: 'var(--orange-accent)',
+                      letterSpacing: '0.12em',
+                      fontWeight: 500,
+                    }}
+                  >
+                    {credit.label}
+                  </span>
+                  <p
+                    className="font-ui m-0"
+                    style={{
+                      fontSize: '13px',
+                      color: 'rgba(255, 255, 255, 0.6)',
+                      lineHeight: 1.6,
+                    }}
+                  >
+                    {credit.value}
+                  </p>
+                </div>
+              ))}
             </motion.div>
           </div>
         </div>
@@ -169,7 +109,7 @@ export default function AboutSection() {
             letterSpacing: '0.15em',
           }}
         >
-          RE: DHARAVI © SPARC × KRVIA 2010 — Web Translation 2026
+          RE: DHARAVI © SPARC × KRVIA 2010 - Web Translation 2026
         </p>
       </footer>
     </>
