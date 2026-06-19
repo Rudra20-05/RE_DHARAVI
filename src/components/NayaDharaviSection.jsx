@@ -118,7 +118,7 @@ export default function NayaDharaviSection() {
                 className="border-none m-0"
                 style={{
                   height: '2px',
-                  backgroundColor: 'var(--red-primary)',
+                  backgroundColor: 'var(--orange-accent)',
                   maxWidth: '80px',
                   transformOrigin: 'left',
                 }}
@@ -184,8 +184,8 @@ export default function NayaDharaviSection() {
                   style={{
                     fontSize: '36px',
                     lineHeight: 1,
-                    color: 'var(--red-primary)',
-                    opacity: 0.3,
+                    color: 'var(--brand-magenta)',
+                    opacity: 0.4,
                   }}
                 >
                   {pillar.number}
@@ -266,7 +266,7 @@ export default function NayaDharaviSection() {
             className="border-none mt-12 mb-6"
             style={{
               height: '2px',
-              backgroundColor: 'var(--red-primary)',
+              backgroundColor: 'var(--orange-accent)',
               maxWidth: '400px',
               transformOrigin: 'left',
             }}

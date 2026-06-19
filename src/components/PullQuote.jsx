@@ -5,7 +5,7 @@ export default function PullQuote({ quote, attribution }) {
     <blockquote
       className="my-8 py-2"
       style={{
-        borderLeft: '3px solid var(--red-primary)',
+        borderLeft: '3px solid var(--brand-magenta)',
         paddingLeft: '24px',
       }}
     >

@@ -8,7 +8,7 @@ export default function CalloutStat({ number, label }) {
         style={{
           fontSize: '96px',
           lineHeight: 1,
-          color: 'var(--red-primary)',
+          color: 'var(--brand-rose)',
         }}
       >
         {number}

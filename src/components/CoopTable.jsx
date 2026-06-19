@@ -73,7 +73,7 @@ export default function CoopTable() {
                 aria-label="Dharavi community structures data"
               >
                 <thead>
-                  <tr style={{ backgroundColor: 'var(--red-primary)' }}>
+                  <tr style={{ background: 'var(--gradient-brand)' }}>
                     <th
                       className="text-left font-ui font-semibold text-white uppercase"
                       style={{

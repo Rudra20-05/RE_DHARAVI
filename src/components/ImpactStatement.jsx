@@ -52,7 +52,7 @@ export default function ImpactStatement() {
           className="border-none mt-12 mb-6"
           style={{
             height: '2px',
-            backgroundColor: 'var(--red-primary)',
+            backgroundColor: 'var(--orange-accent)',
             maxWidth: '400px',
             transformOrigin: 'left',
           }}

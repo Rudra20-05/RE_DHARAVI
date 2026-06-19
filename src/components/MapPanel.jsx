@@ -7,7 +7,7 @@ const ZONES = [
   {
     id: 'zone-a',
     name: 'Pottery',
-    fill: '#D4620A',
+    fill: '#8C0044',
     tooltip: 'Kumbharwada - Pottery District, est. population 5,000',
     points: '80,60 230,60 230,200 80,200',
     labelX: 155,
@@ -52,7 +52,7 @@ const ZONES = [
   {
     id: 'zone-f',
     name: 'Mixed Residential',
-    fill: '#B31B1B',
+    fill: '#1C0855',
     tooltip: 'Transit Camp - Mixed residential, highest density',
     points: '520,230 740,230 740,380 520,380',
     labelX: 630,
