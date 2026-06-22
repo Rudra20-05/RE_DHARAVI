@@ -43,8 +43,8 @@ export default function SectionDivider({ partNumber, title, description, imageSr
 
       {/* Text content */}
       <div
-        className="relative z-10 flex flex-col justify-center h-full"
-        style={{ paddingLeft: 'clamp(24px, 5vw, 80px)', paddingRight: 'clamp(24px, 5vw, 80px)', maxWidth: '60%' }}
+        className="relative z-10 flex flex-col justify-center h-full w-full md:max-w-[60%]"
+        style={{ paddingLeft: 'clamp(24px, 5vw, 80px)', paddingRight: 'clamp(24px, 5vw, 80px)' }}
       >
         {/* Part label */}
         <motion.span
@@ -75,7 +75,7 @@ export default function SectionDivider({ partNumber, title, description, imageSr
           <motion.p
             className="font-body mt-6"
             style={{
-              fontSize: '28px',
+              fontSize: 'clamp(20px, 4vw, 28px)',
               fontStyle: 'italic',
               color: 'rgba(255, 255, 255, 0.75)',
               maxWidth: '500px',

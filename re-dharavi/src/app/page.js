@@ -39,7 +39,7 @@ export default function Home() {
 
       {/* 2. Section Divider - Part 01 - Sticky (slides on top of Hero) */}
       <div id="story" className="relative w-full" style={{ height: 0, margin: 0, padding: 0 }} />
-      <div className="sticky top-0 z-10 w-full h-screen overflow-hidden">
+      <div className="responsive-sticky-section z-10 w-full">
         <SectionDivider
           partNumber="01"
           title="The Dharavi Story"
@@ -51,7 +51,7 @@ export default function Home() {
       </div>
 
       {/* 3. Slide 2: A City Within A City (Editorial Row 01 - Sticky vertical reveal) */}
-      <div className="sticky top-0 z-20 w-full min-h-screen flex flex-col justify-center pt-[80px]" style={{ backgroundColor: 'var(--off-white)', boxShadow: '0 -20px 40px rgba(0,0,0,0.15)' }}>
+      <div className="responsive-editorial-sticky z-20 w-full flex flex-col justify-center pt-[80px]" style={{ backgroundColor: 'var(--off-white)', boxShadow: '0 -20px 40px rgba(0,0,0,0.15)' }}>
         <EditorialRow
           ghostNumber="01"
           label="THE STORY"
@@ -67,15 +67,15 @@ export default function Home() {
       </div>
 
       {/* 4. Slide 3: Land of High Returns (Data Panel - Sticky vertical reveal) */}
-      <div className="sticky top-0 z-30 w-full min-h-screen flex flex-col justify-center pt-[80px]" style={{ backgroundColor: 'var(--dark-navy)', boxShadow: '0 -20px 40px rgba(0,0,0,0.15)' }}>
+      <div className="responsive-editorial-sticky z-30 w-full flex flex-col justify-center pt-[80px]" style={{ backgroundColor: 'var(--dark-navy)', boxShadow: '0 -20px 40px rgba(0,0,0,0.15)' }}>
         <LineChartPanel compact={true} />
       </div>
 
       {/* 5. Horizontal Overlapping Slide Track - z-40 (scrolls naturally after Data Panel, then locks and slides horizontally right-to-left) */}
-      <div id="makeover" ref={horizontalRef} className="relative h-[400vh] w-full z-40" style={{ boxShadow: '0 -20px 40px rgba(0,0,0,0.15)' }}>
-        <div className="sticky top-0 h-screen w-full overflow-hidden bg-off-white">
+      <div id="makeover" ref={horizontalRef} className="horizontal-track-container z-40" style={{ boxShadow: '0 -20px 40px rgba(0,0,0,0.15)' }}>
+        <div className="horizontal-sticky-wrapper bg-off-white">
           {/* Slide 1: Part 02 Section Divider (Static initial slide in the background) */}
-          <div className="absolute inset-0 flex flex-col justify-center bg-off-white" style={{ zIndex: 10 }}>
+          <div className="horizontal-slide bg-off-white" style={{ zIndex: 10 }}>
             <SectionDivider
               partNumber="02"
               title="Makeover or Takeover"
@@ -89,7 +89,7 @@ export default function Home() {
           {/* Slide 2: Redevelopment Editorial Row (slides in horizontally on top of Slide 1) */}
           <motion.div
             style={{ x: x2, zIndex: 20 }}
-            className="absolute inset-0 pt-[80px] overflow-y-auto bg-off-white flex flex-col justify-center"
+            className="horizontal-slide bg-off-white"
           >
             <EditorialRow
               reversed={true}
@@ -110,7 +110,7 @@ export default function Home() {
           {/* Slide 3: Newspaper Clipping Timeline (slides in horizontally on top of Slide 2) */}
           <motion.div
             style={{ x: x3, zIndex: 30 }}
-            className="absolute inset-0 pt-[80px] overflow-y-auto bg-off-white flex flex-col justify-center"
+            className="horizontal-slide bg-off-white"
           >
             <ClippingTimeline compact={true} />
           </motion.div>
@@ -118,7 +118,7 @@ export default function Home() {
           {/* Slide 4: Sector IV Interactive Map (slides in horizontally on top of Slide 3) */}
           <motion.div
             style={{ x: x4, zIndex: 40, backgroundColor: 'var(--charcoal)' }}
-            className="absolute inset-0 pt-[80px] overflow-y-auto flex flex-col justify-center"
+            className="horizontal-slide"
           >
             <MapPanel compact={true} />
           </motion.div>
@@ -126,7 +126,7 @@ export default function Home() {
           {/* Slide 5: Community Structures Table (slides in horizontally on top of Slide 4) */}
           <motion.div
             style={{ x: x5, zIndex: 50 }}
-            className="absolute inset-0 pt-[80px] overflow-y-auto bg-off-white flex flex-col justify-center"
+            className="horizontal-slide bg-off-white"
           >
             <CoopTable compact={true} />
           </motion.div>
