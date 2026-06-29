@@ -41,6 +41,13 @@ const SECTORS = [
     highlightPath: 'M 120 20 L 170 20 L 170 60 L 120 60 Z',
     image: '/images/dharavi-street.png',
   },
+  {
+    slug: 'sector-6',
+    name: 'Sector VI (Matunga Railway Land / Ganesh Nagar)',
+    desc: 'Features approximately 35 acres of railway land in Matunga, including Ganesh Nagar and Meghwadi, designated for initial rehabilitation housing.',
+    highlightPath: 'M 10 20 L 35 20 L 35 60 L 10 60 Z',
+    image: '/images/dharavi-street.png',
+  },
 ];
 
 export default function DiversityCulture() {
@@ -78,7 +85,7 @@ export default function DiversityCulture() {
               lineHeight: 1.75
             }}
           >
-            Dharavi is not uniform; it is divided into five distinct sectors, each harboring unique religious congregations, regional dialects, and specialized trades.
+            Dharavi is not uniform; it is divided into six distinct sectors, each harboring unique religious congregations, regional dialects, and specialized trades.
           </p>
         </div>
 
@@ -122,6 +129,7 @@ export default function DiversityCulture() {
                     <path d="M 130 70 L 180 70 L 180 110 L 130 110 Z" fill="rgba(255,255,255,0.15)" />
                     <path d="M 40 20 L 110 20 L 110 60 L 40 60 Z" fill="rgba(255,255,255,0.15)" />
                     <path d="M 120 20 L 170 20 L 170 60 L 120 60 Z" fill="rgba(255,255,255,0.15)" />
+                    <path d="M 10 20 L 35 20 L 35 60 L 10 60 Z" fill="rgba(255,255,255,0.15)" />
                     
                     {/* Highlighted sector in gold */}
                     <path d={sector.highlightPath} fill="var(--nbt-gold)" />

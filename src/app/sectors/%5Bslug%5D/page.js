@@ -44,6 +44,14 @@ const SECTOR_DETAILS = {
     details: 'Contains Dharavi\'s central recycling compound, recycling up to 80% of Mumbai\'s inorganic solid waste. Possesses a highly structured informal sorting hierarchy.',
     color: '#9B5DE5',
   },
+  'sector-6': {
+    name: 'Sector VI (Matunga Railway Land / Ganesh Nagar)',
+    demographics: 'Estimated 11,000 households scheduled for rehabilitation. Primarily rail-side laborers, local residents, and transit-aligned families.',
+    history: 'Est. 1980s. Designated as railway-owned land in Matunga, Sector VI comprises vital clusters like Ganesh Nagar, Meghwadi, and Azad Nagar.',
+    trades: 'Local municipal work, railway maintenance assistance, and small household-level service trades.',
+    details: 'A crucial initial development sector. Spanning 35 acres of railway land, the area is set for 11,000 rehabilitation tenements to support direct, key-to-key relocation of eligible families.',
+    color: '#FF6F59',
+  },
 };
 
 export default function SectorPage({ params }) {
